@@ -1,4 +1,4 @@
-form config import host_name, user_name, user_password, db_name
+from config import host_name, user_name, user_password, db_name
 import mysql.connector
 from mysql.connector import Error
 
