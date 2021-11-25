@@ -1,6 +1,7 @@
 from config import host_name, user_name, user_password, db_name
 import mysql.connector
 from mysql.connector import Error
+from queries import *
 
 def create_connection(host_name, user_name, user_password, db_name):
     connection = None
@@ -37,11 +38,6 @@ def read_query(connection, query):
         print(f"Error: '{err}'")
 
 connection = create_connection(host_name, user_name, user_password, db_name) # Connect to the Database
-
-q1 = """
-SELECT *
-FROM USER;
-"""
 
 results = read_query(connection, q1)
 
