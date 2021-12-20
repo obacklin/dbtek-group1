@@ -39,7 +39,7 @@ def read_query(connection, query):
 
 connection = create_connection(host_name, user_name, user_password, db_name) # Connect to the Database
 
-results = read_query(connection, q1)
+# results = read_query(connection, q1)
 
-for result in results:
-  print(result)
+# for result in results:
+#   print(result)
